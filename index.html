@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <title>To do list</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="to-do-container">
+            <div class="delete-all" id="delete-all">
+                <img src="images/delete.png" alt="Delete All Button" width="20" height="25" class="delete-all-img"
+                    id="delete-all-button" />
+            </div>
+
+            <h1>To Do <img src="images/target.png" alt="Target icon" width="25" height="25"></h1>
+
+            <div class="task-input">
+                <input type="text" id="input-field" placeholder="What's next?" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-size: 16px;" onkeyup="updateFontStyle(this)" />
+                <button onclick="addtask()">Add</button>
+              </div>
+
+            <ul id="task-list">
+            </ul>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

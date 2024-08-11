@@ -1,0 +1,223 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', 'sans-serif';
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #0094ff;
+    padding: 10px
+}
+
+.to-do-container {
+    width: 100%;
+    max-width: 540px;
+    background-color: #fff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 20px;
+}
+
+.task-input {
+    display: flex;
+    justify-content: space-between;
+    background: #F5F5F5;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+input {
+    height: 30px;
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+button {
+    width: 60px;
+    background: #ff5945;
+    padding: 10px 10px;
+    outline: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 20px;
+    justify-content: center;
+}
+
+ul li {
+    padding: 12px 8px 12px 50px;
+    list-style: none;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+}
+
+ul li::before {
+    content: '';
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    border-radius: 50%;
+    background-position: center;
+    top: 8px;
+    left: 8px;
+}
+
+ul li.checked {
+    padding: 12px 8px 12px 50px;
+    list-style: none;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    text-decoration: line-through;
+    font: #D3D3D3;
+}
+
+ul li.checked::before {
+    content: '';
+    background-image: url(images/checked.png);
+    background-size: cover;
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    border-radius: 50%;
+    background-position: center;
+    top: 8px;
+    left: 8px;
+}
+
+.delete_button {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    font-size: 22px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.delete_button:hover {
+    background: #FFEFDB;
+}
+
+.high-priority {
+    position: absolute;
+    right: 150px;
+    top: 12px;
+    font-size: 40px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+}
+
+.high-priority.selected {
+    position: absolute;
+    right: 150px;
+    top: 12px;
+    font-size: 22px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    background: #ff7853;
+}
+
+.high-priority:hover {
+    background: #ff7853;
+}
+
+.medium-priority {
+    position: absolute;
+    right: 100px;
+    top: 12px;
+    font-size: 22px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+}
+
+.medium-priority.selected {
+    position: absolute;
+    right: 100px;
+    top: 12px;
+    font-size: 22px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    background: #ff7853;
+}
+
+
+.medium-priority:hover {
+    background: #ff7853;
+}
+
+.low-priority {
+    position: absolute;
+    right: 50px;
+    top: 12px;
+    font-size: 22px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+}
+
+.low-priority.selected {
+    position: absolute;
+    right: 50px;
+    top: 12px;
+    font-size: 22px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    background: #ff7853;
+}
+
+
+.low-priority:hover {
+    background: #ff7853;
+}
+
+.delete-all-img {
+    cursor: pointer;
+    float: right;
+    position: relative;
+    right: 10px;
+}
+
+.delete_button:hover {
+    background: #FFEFDB;
+}
